@@ -1,0 +1,8 @@
+# url for our database 
+# we define the url in a seperate file because in some cases multiple pods will need to reach this url 
+piVersion: v1
+kind: ConfigMap
+metadata:
+        name: mongodb-configmap
+data:
+        database_url: mongodb-service
